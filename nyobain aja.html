@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Minta Maap</title>
+  </head>
+  <body>
+    <section class="bg">
+      <div class="pembuka">
+        <h2>Hallo Alika!</h2>
+        <h3>
+          Sebelumnya, Maaf Mengganggu Waktunya yaa, Karna Sebentar Lagi Bulan Puasa.<br />
+          Aku Mau Minta Maaf Dan Juga Aku Berharap Kita bisa Berkomunikasi Lagi Seperti
+          Dulu. <br />
+          Maaf Atas Segalanya yaa
+        </h3>
+      </div>
+      <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
+      <h1>Kamu Mau Maafin Aku Nggak?</h1>
+      <div class="kh">
+        <button id="btn_mau" onclick="alert('Terima Kasih Alika!')">Iya</button>
+        <button id="btn_gamau" onclick="gamau(this)">Nggak</button>
+      </div>
+    </section>
+    <script>
+     function gamau(id) {
+  var i = Math.random() * 200 - 100; // Rentang pergerakan horizontal
+  var j = Math.random() * 200 - 100; // Rentang pergerakan vertikal
+  id.style.transform = `translate(${i}px, ${j}px)`;
+}
+    </script>
+  </body>
+</html>
